@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d30ff5ad29.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Notes</h1>
+            <form action="#notes">
+                <input id="search" type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <i id="menu" class="fas fa-bars"></i>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Accomplish more with better notes</h1>
+            <p>Mynote helps you capture ideas and find them fast.</p>
+            <a href="#z"><button id="btn" class="btn">Add a Note</button></a>
+        </div>
+        <hr>
+        <div class="container">
+            <img src="notes_bg.jpg" alt="Notes" width="50%">
+            <div class="info">
+                <div class="sub-info">
+                    <h3>WORK ANYWHERE</h3>
+                    <p>Keep important info handy by syncing your notes to all your devices.</p>
+                </div>
+                <div class="sub-info">
+                    <h3>YOUR NOTES, YOUR WAY</h3>
+                    <p>Express yourself with formatting tools that help you write how you think.</p>
+                </div>
+                <div class="sub-info">
+                    <h3>FIND THINGS FAST</h3>
+                    <p>Get what you need, when you need it. Search gives you results as you type.</p>
+                </div>
+            </div>
+        </div>
+        <!-- cols="50" rows="5" -->
+        <div class="new-notes" id="z">
+            <h1 class="heading">Add a New Note</h1>
+            <textarea name="new-note" id="new-note" cols="20" rows="5" placeholder="Add a Note..."></textarea>
+            <button class="btn-1" id="addBtn">Add Note</button>
+            <h2 id="note-added"></h2>
+        </div>
+        <h1 class="heading" style="color: #2C2E43;">Your Notes</h1>
+
+
+        <div class="notes" id="notes"></div>
+
+        <section class="about">
+            <img src="Team.jpg" alt="About Us">
+            <div class="my-info">
+                <h1>About Us</h1>
+                <p>When Shailesh Godghase, our founder, began working on the idea that eventually became <span style="color: #FFD523;">Note</span>, he recognized three things the human brain does: it remembers the past, builds connections, and creates new ideas for the future.</p>
+            </div>
+        </section>
+
+        <section class="contact" style="height: 550px;">
+            <div class="message-us">
+                <h1>Message Us</h1>
+                <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us...</p>
+            </div>
+            <div class="feedback">
+                <form action="https://formsubmit.co/shaileshgodghase3105@gmail.com" onsubmit="thank()" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" id="New Mail Woooo!!">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="hidden" name="_next" value="">
+                    <div class="m-area">
+                        <textarea name="Message" id="message"  placeholder="Message.." required></textarea>
+                        <!-- cols="25" rows="5"-->
+                    </div>
+                    <button class="btn" type="submit">Send message</button>
+                    <h3 id="thank"></h3>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="flex-item">
+                <h1>Notes</h1>
+                <span style="color: #B2B1B9;">Mynote helps you capture ideas <br>and find them fast.</span>
+            </div>
+            <div class="flex-item">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex-item">
+                <h3>Visit</h3>
+                <p style="color: #B2B1B9;">Plot No. 98, Indira<br> Market Cidco,<br> Aurangabad 431003.</p>
+            </div>
+            <div class="flex-item">
+                <h3>Follow</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="flex-item">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="credits">
+            <span style="color:white">Created By <a style="color: #FFD523;" href="https://shaileshgodghase.github.io/Portfolio/" target="_blank">Shailesh Godghase</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+        </div>    
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
