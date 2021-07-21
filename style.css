@@ -329,6 +329,9 @@ footer{
 
 /*935*/
 @media only screen and (max-width: 780px){
+    nav input[type=text]{
+        width: 120px;
+    }
     nav{
         padding: 10px 20px;
     }
